@@ -2,6 +2,8 @@
 
 This script updates an existing Postman collection with an updated OpenAPI file. It reads the OpenAPI file, converts it to a Postman collection, and updates the specified Postman collection using the Postman API.
 
+You can use this script in order to keep downstream forks and stars intact.
+
 ## Prerequisites
 
 1. Node.js installed
@@ -14,7 +16,9 @@ This script updates an existing Postman collection with an updated OpenAPI file.
 
 ## Usage
 
-	node index.js <OAS_FILE_PATH> <COLLECTION_ID>
+```
+$ node index.js <OAS_FILE_PATH> <COLLECTION_ID>
+```
 
 Where:
 
@@ -23,8 +27,9 @@ Where:
 
 ### Example
 
-	node script.js 'petstore.yaml' '308093-acbc504c-c371-432f-b7e0-8f8afc0f5364'
-
+```
+$ node script.js 'petstore.yaml' '308093-acbc504c-c371-432f-b7e0-8f8afc0f5364'
+```
 
 This command will update the Postman collection with the specified ID using the OpenAPI file provided.
 
